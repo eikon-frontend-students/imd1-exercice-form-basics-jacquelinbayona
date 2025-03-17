@@ -27,6 +27,21 @@ h1 {
   font-weight: 700;
   line-height: 45px; /* 125% */
 }
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #c02589;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
 .Contact form {
   display: flex;
   width: 388px;
@@ -122,12 +137,38 @@ input[type="text"] {
   cursor: pointer;
   transition: all 0.3s;
 }
+.checkboxes label span {
+  font-size: 14px;
+}
+
+.checkboxes input:checked + span {
+  background-color: #c02589;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
 input[type="checkbox"] {
   display: none;
 }
 .checkboxes label {
   border: 1px solid #000;
   padding: 10px;
+}
+.submit {
+  width: 100%;
+  background-color: #c02589;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit:hover {
+  background-color: #a01e72;
 }
 
 /**
