@@ -5,16 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Formulaires - Bases - Intégration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <form action="">
+    <h1>Discutons et collaborons sur des projets super!</h1>
+    <div class="Contact form">
+    <form action="https://formsubmit.co/jacquelin.bayona@studentfr.ch"
+      method="POST">
       <p>Je suis intéressé par</p>
 
-      <div class="buttons">
-        <button>Ux/ui Design</button>
-        <button>Web design</button>
-        <button>Graphic Design</button>
-        <button>Other</button>
+      <div class="checkboxes">
+        <label for="button-Ux">
+          <input
+            type="checkbox"
+            id="button-Ux"
+            name="buttons"
+            value="buttons"
+          />
+          <span>Ux/ui Design</span>
+        </label>
+        <label for="button-Web-design ">
+          <input
+            type="checkbox"
+            id="button-Web-design "
+            name="buttons"
+            value="buttons"
+          />
+          <span>Web design</span>
+        </label>
+        <label for="button-Graphic-Design">
+          <input
+            type="checkbox"
+            id="button-Graphic-Design"
+            name="buttons"
+            value="buttons"
+          />
+          <span>Graphic Design</span>
+        </label>
+        <label for="button-Other">
+          <input
+            type="checkbox"
+            id="buttons-Other"
+            name="buttons"
+            value="buttons"
+          />
+          <span>Other</span>
+        </label>
       </div>
 
       <div class="Nom">
@@ -28,7 +69,7 @@
       </div>
 
       <div class="message">
-        <label for="message">Message</label>
+        <label for="message">Message *</label>
         <textarea
           id="message"
           name="message"
@@ -36,9 +77,10 @@
         ></textarea>
       </div>
 
-      <div class="submit">
-        <button>Envoyer</button>
+      <div>
+        <button class="submit">Envoyer</button>
       </div>
+    </div>
     </form>
   </body>
 </html>
